@@ -8,13 +8,16 @@
     transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 400ms;
 }
 
+.link > span {
+    color: var(--colour-blossom);
+    margin-right: .5rem;
+}
 .link:hover {
     cursor: pointer;
     background-color: var(--colour-blossom);
     color: var(--colour-bg) !important;
     box-shadow: 0 0px 0px rgba(0, 0, 0, 0.12);
 }
-
 .link:hover > span {
     color: var(--colour-bg) !important;
 }
