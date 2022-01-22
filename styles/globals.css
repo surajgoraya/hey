@@ -1,3 +1,15 @@
+:root {
+  /* surajgoraya.ca theme colours */
+  --colour-blossom: hsl(355, 52%, 42%);
+  --colour-fade: hsl(23, 100%, 63%);
+  --colour-bg: hsl(0, 0%, 100%);
+  --colour-text: hsl(206, 19%, 17%);
+  --colour-text-transparent: hsla(208, 20%, 17%, 0.564);
+  --colour-text-alt: hsl(208, 19%, 10%);
+  --colour-bg-alt: hsl(0deg 0% 96%);
+  --colour-visited: hsl(from var(--colour-blossom) h s calc(l - 10%));
+}
+
 html,
 body {
   padding: 0;
@@ -7,8 +19,28 @@ body {
 }
 
 a {
-  color: inherit;
+  color: var(--colour-blossom);
   text-decoration: none;
+}
+
+h1 {
+  font-size: 2.275rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-weight: 200;
+}
+
+p{
+  font-weight: 300;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
 }
 
 * {
