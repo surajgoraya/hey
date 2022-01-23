@@ -17,7 +17,7 @@ export default function Home(props) {
 
       <main className={styles.main}>
         <div id='header' className={styles.header}>
-          {props.show_picture ? <Image src={'/profile.jpg'} height={150} width={150} className={styles.main_image}
+          {props.show_picture ? <Image src={'/profile.jpg'} placeholder='blur' height={150} width={150} className={styles.main_image}
           alt='A black and white image of Suraj'/> : null}
           <div className={styles.header_lines}> 
             <h1 className={styles.main_line}>{props.main_line}</h1>
