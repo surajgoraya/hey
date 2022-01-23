@@ -49,11 +49,14 @@
 }
 
 .footer {
+  position: fixed;
+  bottom: 0;
   display: flex;
   padding: 1rem 0;
   width: 100% !important;
   color: var(--colour-text-alt);
-  background-color: var( --colour-bg-alt);
+  opacity: 0.5;
+  /* background-color: var( --colour-bg-alt); */
   justify-content: center;
   align-items: center;
 }
