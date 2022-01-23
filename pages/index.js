@@ -8,7 +8,7 @@ export default function Home(props) {
     <div className={styles.container}>
       <Head>
         <title>{`${props.site_title} | ${props.site_description}`}</title>
-        <meta name="description" content="@surajgoraya | links" />
+        <meta name="description" content={props.meta_description} />
         <link rel="icon" href="/favicon.png" />
         <link rel="stylesheet" href="https://use.typekit.net/juv7tgb.css"/>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -17,11 +17,11 @@ export default function Home(props) {
 
       <main className={styles.main}>
         <div id='header' className={styles.header}>
-          <Image src={'/profile.jpg'} height={150} width={150} className={styles.main_image}
-          alt='A black and white image of Suraj'/>
+          {props.show_picture ? <Image src={'/profile.jpg'} height={150} width={150} className={styles.main_image}
+          alt='A black and white image of Suraj'/> : null}
           <div className={styles.header_lines}> 
-            <h1 className={styles.main_line}>suraj goraya</h1>
-            <h3 className={styles.by_line}>5th year computer science student, making music and coding things.</h3>
+            <h1 className={styles.main_line}>{props.main_line}</h1>
+            <h3 className={styles.by_line}>{props.by_line}</h3>
           </div>
         </div>
         <div id='content' className={styles.content}>
