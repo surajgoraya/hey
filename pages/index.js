@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Link from '../compoents/Link';
+import Link from '../components/Link';
 import styles from '../styles/Home.module.css'
 import authorImage from '../public/profile.jpg';
 
