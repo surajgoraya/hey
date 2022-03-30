@@ -2,13 +2,12 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from '../components/Link';
 import styles from '../styles/Home.module.css'
-import authorImage from '../public/profile.jpg';
 
 export default function Home(props) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>{`${props.site_title} | ${props.site_description}`}</title>
+        <title>{`${props.site_title} | ${props.site_description}`.toLowerCase()}</title>
         <meta name="description" content={props.meta_description} />
         <link rel="icon" href="/favicon.png" />
         <link rel="stylesheet" href="https://use.typekit.net/juv7tgb.css"/>
@@ -18,8 +17,8 @@ export default function Home(props) {
 
       <main className={styles.main}>
         <div id='header' className={styles.header}>
-          {props.show_picture ? <Image src={authorImage} placeholder='blur' height={150} width={150} className={styles.main_image}
-          alt='A black and white image of Suraj'/> : null}
+          {props.picture.show_picture ? <Image src={props.picture.author_image} placeholder='blur' height={150} width={150} className={styles.main_image}
+          alt={props.picture.alt_text}/> : null}
           <div className={styles.header_lines}> 
             <h1 className={styles.main_line}>{props.main_line}</h1>
             <h3 className={styles.by_line}>{props.by_line}</h3>
@@ -30,7 +29,7 @@ export default function Home(props) {
         </div>
       </main>
       <footer className={styles.footer}>
-        <p>&copy;{` ${props.copyright} ${new Date().getFullYear()}`}&nbsp; | &nbsp; <a href='https://github.com/surajgoraya/hey'>{`Open Source`}</a></p>
+        <p>&copy;{` ${props.copyright} ${new Date().getFullYear()}`}&nbsp; | &nbsp; <a href='https://github.com/surajgoraya/hey'>{` hey is open source `}&#8599;</a></p>
       </footer>
     </div>
   )

@@ -1,6 +1,6 @@
 .container {
   color: var(--colour-text);
-  background-color: var(--colour-bg);
+  background-color: var(--colour-bg-alt);
 }
 
 .header_lines {

@@ -10,6 +10,17 @@
   --colour-visited: hsl(from var(--colour-blossom) h s calc(l - 10%));
 }
 
+/* @media (prefers-color-scheme: dark) {
+	:root {
+		--colour-blossom: hsl(355, 52%, 42%);
+		--colour-fade: hsl(23, 100%, 63%);
+		--colour-text: hsl(0, 0%, 100%);
+		--colour-bg: hsl(208deg 10% 11%);
+		--colour-bg-alt: hsl(208deg 5% 19%);
+		--colour-visited: hsl(from var(--colour-blossom) h s calc(l - 10%));
+	}
+} */
+
 html,
 body {
   padding: 0;
@@ -17,7 +28,9 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
-
+p {
+  color: var(--colour-text);
+}
 a {
   color: var(--colour-blossom);
   text-decoration: none;

@@ -1,9 +1,14 @@
+import authorImage from '../public/profile.jpg';
 const CONFIG = {
     site_title: "suraj goraya",
     site_description: "Links",
     meta_title: "@surajgoraya | Links",
     meta_description: "5th year computer science student, making music and coding things.",
-    show_picture: true,
+    picture: {
+        show_picture: true,
+        author_image: authorImage,
+        alt_text: "A black and white image of Suraj"
+    },
     main_line: "suraj goraya",
     by_line: "5th year computer science student, making music and coding things.",
     links: [
