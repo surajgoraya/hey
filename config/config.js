@@ -1,4 +1,3 @@
-import authorImage from '../public/profile.jpg';
 const CONFIG = {
     site_title: "suraj goraya",
     site_description: "Links",
@@ -6,7 +5,6 @@ const CONFIG = {
     meta_description: "5th year computer science student, making music and coding things.",
     picture: {
         show_picture: true,
-        author_image: authorImage,
         alt_text: "A black and white image of Suraj"
     },
     main_line: "suraj goraya",
