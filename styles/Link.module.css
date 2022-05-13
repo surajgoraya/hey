@@ -1,4 +1,4 @@
-.link {
+.link, .promoLink {
     background-color: var(--colour-bg);
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
     font-size: 1rem;
@@ -9,9 +9,27 @@
     transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 400ms;
 }
 
-.link > span {
+.promoLink {
+    color: var(--colour-bg);
+    font-weight: 100;
+    background-color: var(--colour-text-alt);
+    box-shadow: 0 5px 60px var(--colour-blossom);
+}
+
+.inline_image{
+    height: 100px;
+    width: 100px;
+    margin-right: 1rem;
+}
+.link > i {
     color: var(--colour-blossom);
     margin-right: .5rem;
+}
+.promoLink:hover{
+    cursor: pointer;
+    background-color: var(--colour-blossom);
+    color: var(--colour-bg) !important;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.12);
 }
 .link:hover {
     cursor: pointer;
@@ -19,10 +37,10 @@
     color: var(--colour-bg) !important;
     box-shadow: 0 0px 0px rgba(0, 0, 0, 0.12);
 }
-.link:hover > span {
+.link:hover > i {
     color: var(--colour-bg) !important;
 }
 
-.link > span {
+.link > i {
     font-size: 1.25rem;
 }

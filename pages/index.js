@@ -12,8 +12,6 @@ export default function Home(props) {
         <meta name="description" content={props.meta_description} />
         <link rel="icon" href="/favicon.png" />
         <link rel="stylesheet" href="https://use.typekit.net/juv7tgb.css"/>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-        rel="stylesheet"></link>
       </Head>
 
       <main className={styles.main}>
@@ -26,7 +24,7 @@ export default function Home(props) {
           </div>
         </div>
         <div id='content' className={styles.content}>
-          {props.links.map((e, i)=><Link Ref={e.ref} Text={e.text} key={`link__${i}`}/>)}
+          {props.links.map((e, i)=><Link Ref={e.ref} Text={e.text} Image={e?.Image ? e.Image : null} key={`link__${i}`}/>)}
         </div>
       </main>
       <footer className={styles.footer}>
