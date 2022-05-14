@@ -13,7 +13,7 @@ export default function FourOhFour(props) {
         <main className={styles.main}>
             <i className="bi bi-cloud-drizzle-fill"></i>
             <h1>NOT FOUND.</h1>
-            <p>The page you've requested couldn't be found. Sorry.</p>
+            <p>The page you&apos;ve requested couldn&apos;t be found. Sorry.</p>
             <br/>
             <Link href={'/'}><a><i className="bi bi-arrow-left-short"/>return home?</a></Link>
         </main>
