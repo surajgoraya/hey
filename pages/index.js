@@ -14,12 +14,13 @@ export default function Home(props) {
         <meta property="og:title" content={`${props.site_title} | ${props.site_description}`.toLowerCase()} />
         <meta property="og:description" content={`${props.meta_description}`} />
         <meta property="og:image" content="https://hey.surajgoraya.ca/profile.jpg" />
-
+        <meta property="og:image:alt" content={`${props.picture.alt_text}`}  />
+        
+        <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content={`${props.site_title} | ${props.site_description}`.toLowerCase()} />
         <meta property="twitter:description" content={`${props.meta_description}`} />
         <meta property="twitter:image" content="https://hey.surajgoraya.ca/profile.jpg" />
         <meta property="twitter:site" content={`${props.meta_TwitterCreator}`} />
-        <meta property="twitter:creator" content={`${props.meta_TwitterCreator}`} />
 
         <link rel="icon" href="/favicon.png" />
         <link rel="stylesheet" href="https://use.typekit.net/juv7tgb.css" />
