@@ -1,4 +1,4 @@
-# hey.surajgoraya.ca
+# hey.surajgoraya.ca - a links landing page similar to how linktree works, but for me :)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
