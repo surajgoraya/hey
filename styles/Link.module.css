@@ -1,4 +1,5 @@
-.link, .promoLink {
+.link,
+.promoLink {
     background-color: var(--colour-bg);
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
     font-size: 1rem;
@@ -16,31 +17,38 @@
     box-shadow: 0 5px 60px var(--colour-blossom);
 }
 
-.inline_image{
+.promoLink:hover,
+.promoLink:active,
+.promoLink:focus {
+    cursor: pointer;
+    background-color: var(--colour-blossom);
+    color: var(--colour-bg) !important;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.12);
+}
+
+.inline_image {
     height: 100px;
     width: 100px;
     margin-right: 1rem;
 }
+
 .link > i {
     color: var(--colour-blossom);
     margin-right: .5rem;
-}
-.promoLink:hover{
-    cursor: pointer;
-    background-color: var(--colour-blossom);
-    color: var(--colour-bg) !important;
-    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.12);
-}
-.link:hover {
-    cursor: pointer;
-    background-color: var(--colour-blossom);
-    color: var(--colour-bg) !important;
-    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.12);
-}
-.link:hover > i {
-    color: var(--colour-bg) !important;
+    font-size: 1.25rem;
 }
 
-.link > i {
-    font-size: 1.25rem;
+.link:hover,
+.link:active,
+.link:focus {
+    cursor: pointer;
+    background-color: var(--colour-blossom);
+    color: var(--colour-bg) !important;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.12);
+}
+
+.link:hover,
+.link:active,
+.link:focus > i {
+    color: var(--colour-bg) !important;
 }

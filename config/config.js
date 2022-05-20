@@ -2,6 +2,7 @@ const CONFIG = {
     site_title: "suraj goraya",
     site_description: "Links",
     meta_title: "@surajgoraya | Links",
+    meta_TwitterCreator: "@surajgoraya",
     meta_description: "5th year computer science student, making music and coding things.",
     picture: {
         show_picture: true,
