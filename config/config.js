@@ -3,13 +3,13 @@ const CONFIG = {
     site_description: "Links",
     meta_title: "@surajgoraya | Links",
     meta_TwitterCreator: "@surajgoraya",
-    meta_description: "5th year computer science student, making music and coding things.",
+    meta_description: "Making music and coding things.",
     picture: {
         show_picture: true,
         alt_text: "A black and white image of Suraj"
     },
     main_line: "suraj goraya",
-    by_line: "5th year computer science student, making music and coding things.",
+    by_line: "Making music and coding things.",
     links: [
         {text: 'OUT NOW! - okayama by interframe :)', ref: 'https://fanlink.to/okayama',
         Image: 'assets/okayama@0.75x.jpg'},
