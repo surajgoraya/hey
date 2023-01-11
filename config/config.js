@@ -9,7 +9,7 @@ const CONFIG = {
         alt_text: "A black and white image of Suraj"
     },
     main_line: "suraj goraya",
-    by_line: "Making music and coding things.",
+    by_line: "making music and coding things.",
     links: [
         {text: 'OUT NOW! - okayama by interframe :)', ref: 'https://fanlink.to/okayama',
         Image: 'assets/okayama@0.75x.jpg'},
